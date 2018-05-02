@@ -30,7 +30,7 @@ const SidebarTopics = props => {
       <h5>Topics</h5>
       {topics.map(topic => {
         return (
-          <div className="topic_container">
+          <div className="topic_container" key={topic.title}>
             <a href={`topic/${topic.route}/trending`}>{topic.title}</a>
           </div>
         );
