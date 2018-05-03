@@ -1,11 +1,47 @@
 .sidebar {
   padding-top: 25px;
 }
-.topic_container {
+.topic-container {
   padding-top: 5px;
+}
+
+.article-container {
+  display: block
+}
+
+.right-article-details p {
+  margin-top: -10px;
+}
+
+.right-article-details h2 {
+  font-size: 20px;
+}
+
+.left-article-details {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+
+.left-article-details span {
+  display: block;
+  margin-bottom: -10px;
+}
+
+.left-article-details span svg {
+  padding-right: 5px;
+}
+
+.left-article-details span >h5 {
+  font-size: 18px;
 }
 
 a {
   text-decoration: none;
   color: rgb(39, 38, 38);
+}
+
+a:hover {
+  color: orange;
 }

@@ -34,7 +34,6 @@ class App extends Component {
     const sortedNews = newsRank.sort((a, b) => {
       return b.votes - a.votes;
     });
-    console.log("the sorted", sortedNews);
     this.setState({ news: sortedNews });
   }
 
