@@ -44,13 +44,14 @@ class App extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="two columns">
+          <div className="three columns">
             <SidebarTopics />
           </div>
-          <div className="ten columns">
-            <input />
+          <div className="nine columns">
+            <div className="search-bar">
+              <input />
+            </div>
 
-            <h1>Hello</h1>
             {this.state.news.length === 0 ? (
               <p>Loading..</p>
             ) : (

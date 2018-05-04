@@ -1,16 +1,32 @@
+/* Sidebar Component Styling */
+
 .sidebar {
   padding-top: 25px;
+}
+
+.sidebar h5 {
+  font-size: 12px;
+  padding-top: 23px;
+  margin-bottom: 5px;
+  color: gray;
 }
 .topic-container {
   padding-top: 5px;
 }
 
+.topic-container img {
+  padding-top: 4px;
+  padding-right: 5px;
+}
+
+/* DailyNews Component Styling */
+
 .article-container {
-  display: block
+  display: block;
 }
 
 .right-article-details p {
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .right-article-details h2 {
@@ -26,17 +42,20 @@
 
 .left-article-details span {
   display: block;
-  margin-bottom: -10px;
+  margin-bottom: -17px;
 }
 
 .left-article-details span svg {
-  padding-right: 5px;
+  padding-left: 2px;
+  padding-right: 4px;
+  fill: gray;
 }
 
-.left-article-details span >h5 {
+.left-article-details span > h5 {
   font-size: 18px;
 }
 
+/* MISC Styling */
 a {
   text-decoration: none;
   color: rgb(39, 38, 38);
@@ -44,4 +63,21 @@ a {
 
 a:hover {
   color: orange;
+}
+
+.search-bar {
+  padding-top: 25px;
+}
+
+.search-bar input {
+  width: 475px;
+  height: 25px;
+  border: 1px solid rgb(204, 200, 200);
+  margin-bottom: 26px;
+}
+
+@media only screen and (max-width: 640px) {
+  .search-bar input {
+    width: 300px;
+  }
 }

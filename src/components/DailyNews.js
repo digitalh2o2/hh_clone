@@ -4,6 +4,7 @@ const DailyNews = props => {
   const { theNews } = props;
   return (
     <div>
+      <p style={{color: 'gray'}}>WHAT'S HOT</p>
       {theNews.map(article => {
         return (
           <div className="article-container">
@@ -14,14 +15,12 @@ const DailyNews = props => {
                 </h5>
               </span>
               <span>
-                
-                  <svg class="comment-12" width="12" height="12">
-                    <g>
-                      <path d="M3.175 9.412c.842.375 1.803.588 2.825.588 3.314 0 6-2.239 6-5s-2.686-5-6-5-6 2.239-6 5c0 1.052.39 2.028 1.056 2.833l-1.056 3.167 3.175-1.588z" />
-                    </g>
-                  </svg>{" "}
-                  {article.comments}
-                
+                <svg class="comment-12" width="12" height="12">
+                  <g>
+                    <path d="M3.175 9.412c.842.375 1.803.588 2.825.588 3.314 0 6-2.239 6-5s-2.686-5-6-5-6 2.239-6 5c0 1.052.39 2.028 1.056 2.833l-1.056 3.167 3.175-1.588z" />
+                  </g>
+                </svg>{" "}
+                {article.comments}
               </span>
             </div>
             <div className="right-article-details">
@@ -29,6 +28,7 @@ const DailyNews = props => {
                 <h2>{article.title}</h2>
               </a>
               <p>{article.desc}</p>
+              <p style={{fontSize: '12px', color: 'gray'}}>Today by {article.author}</p>
             </div>
             <hr />
           </div>
